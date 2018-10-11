@@ -63,10 +63,6 @@ class HelloBlock extends BlockBase implements BlockPluginInterface{
   }
 
 
-
-
-
-
   /**
    * Custom submit actions
    */
@@ -74,5 +70,7 @@ class HelloBlock extends BlockBase implements BlockPluginInterface{
     $values = $form_state->getValues();
     //Perform the required actions
   }*/
+
+
 }
 
