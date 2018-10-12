@@ -1,4 +1,4 @@
-type: example_mytype
+type: helloworld_mytype
 name: Example
 description: 'Use <em>example</em> content to get to Drupal 8 development better.'
 help: ''
