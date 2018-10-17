@@ -1,0 +1,4 @@
+boxed-form:
+  css:
+    theme:
+      css/style.css: {}

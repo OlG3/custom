@@ -92,5 +92,13 @@ class HelloBlock extends BlockBase implements BlockPluginInterface{
     ];
   }
 
+
+  function helloworld_element_info_alter(array &$types) {
+    if (isset($types['table'])) {
+      $types['table']['#attached']['library'][] = 'hello_world/boxed-form';
+    }
+  }
+
+
 }
 
