@@ -1,0 +1,5 @@
+name: 'custom-ct'
+type: module
+description: 'My Custom Content Type'
+core: 8.x
+package: 'Custom'
