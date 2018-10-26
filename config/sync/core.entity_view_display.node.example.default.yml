@@ -1,0 +1,37 @@
+uuid: 4325459f-7e24-4ca6-a703-6a1918d946ac
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.example.body
+    - field.field.node.example.field_taxonomy_ref
+    - node.type.example
+  module:
+    - text
+    - user
+id: node.example.default
+targetEntityType: node
+bundle: example
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_taxonomy_ref:
+    weight: 102
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

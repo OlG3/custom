@@ -1,0 +1,18 @@
+uuid: 850b3d01-6f8f-4c02-97f7-da8f7b5568fb
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: Example
+type: example
+description: ''
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false
