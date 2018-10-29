@@ -5,3 +5,9 @@
  * Contains custom_ct.module.
  */
 
+function custom_ct_entity_presave(Drupal\Core\Entity\EntityInterface $entity) {
+  if ($entity->getEntityType()->id() == 'node') {
+    $entity->setTitle('The new Title');
+    //CAUTION : Do not save here, because it's automatic.
+  }
+}
