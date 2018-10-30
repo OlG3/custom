@@ -8,6 +8,41 @@
 function custom_ct_entity_presave(Drupal\Core\Entity\EntityInterface $entity) {
   if ($entity->getEntityType()->id() == 'node') {
     $entity->setTitle('The new Title');
+    //$entity->set('body', 'text-custom');
+    $entity->field_taxonomy_ref[] = ['target_id' => $tid];
     //CAUTION : Do not save here, because it's automatic.
   }
 }
+
+
+
+//$array_elements = ['work', 'node'];
+//  $tids = [];
+//  foreach ($array_elements as $key => $value) {
+//    // TODO: check if term with value already exist.
+//    if ('term_exist') {
+//      // TODO: Load term.
+//      $tids[] = $existing_term->id();
+//    }
+//    else {
+//      $new_term = Term::create([
+//        'vid' => "YOUR_VOCABULARY_MACHINE_NAME",
+//        'name' => $value,
+//      ]);
+//      $new_term->save();
+//      $tids = $new_term->id();
+//    }
+//  }
+//
+//  $node->set('YOUR_FIELD_OF_TERMS', $tids);
+//
+//
+///**
+// * Implements hook_ENTITY_TYPE_presave() for user entities.
+// */
+//function system_user_presave(UserInterface $account) {
+//  $config = \Drupal::config('system.date');
+//  if ($config->get('timezone.user.configurable') && !$account->getTimeZone() && !$config->get('timezone.user.default')) {
+//    $account->timezone = $config->get('timezone.default');
+//  }
+//}
